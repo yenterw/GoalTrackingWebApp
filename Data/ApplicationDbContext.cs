@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using GoalTrackingWebApp.Models;
 
 namespace GoalTrackingWebApp.Data
 {
@@ -12,5 +13,6 @@ namespace GoalTrackingWebApp.Data
             : base(options)
         {
         }
+        public DbSet<GoalTrackingWebApp.Models.Goal> Goal { get; set; }
     }
 }
