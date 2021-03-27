@@ -10,7 +10,6 @@ namespace GoalTrackingWebApp.Models
         public int Id { get; set; }
         public string GoalTitle { get; set; }
         public string GoalText { get; set; }
-
         public Goal()
         {
 
