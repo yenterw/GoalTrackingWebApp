@@ -55,6 +55,24 @@ namespace GoalTrackingWebApp.Controllers
             return View(goal);
         }
 
+        // GET: Goals/Completed/5
+        public async Task<IActionResult> Completed(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var goal = await _context.Goal
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (goal == null)
+            {
+                return NotFound();
+            }
+
+            return View(goal);
+        }
+
         // GET: Goals/Create
         public IActionResult Create()
         {
