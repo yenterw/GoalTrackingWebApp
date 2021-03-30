@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace GoalTrackingWebApp.Models
 {
-    public class Goal
+    public class CompletedGoal
     {
         [Key]
         public int Id { get; set; }
@@ -14,7 +14,7 @@ namespace GoalTrackingWebApp.Models
         public string GoalTitle { get; set; }
         public string GoalText { get; set; }
         public DateTime GoalDate { get; set; } //DateTime defaultDate = default(DateTime); var date = defaultDate.ToString().Replace("12:00:00 AM", "");
-        public Goal()
+        public CompletedGoal()
         {
 
         }
