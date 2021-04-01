@@ -168,3 +168,4 @@ E:\GoalTrackingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Goals\Details.cshtml.g
 E:\GoalTrackingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Goals\Edit.cshtml.g.cs
 E:\GoalTrackingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Goals\Index.cshtml.g.cs
 E:\GoalTrackingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Goals\ShowSearchForm.cshtml.g.cs
+E:\GoalTrackingWebApp\obj\Debug\netcoreapp3.1\Razor\Views\Goals\Completed.cshtml.g.cs
