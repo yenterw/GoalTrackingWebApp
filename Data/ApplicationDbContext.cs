@@ -14,5 +14,6 @@ namespace GoalTrackingWebApp.Data
         {
         }
         public DbSet<GoalTrackingWebApp.Models.Goal> Goal { get; set; }
+        public DbSet<GoalTrackingWebApp.Models.CompletedGoal> CompletedGoal { get; set; }
     }
 }
