@@ -56,11 +56,8 @@ namespace GoalTrackingWebApp.Controllers
         }
 
         // GET: Goals/Completed/5
-        public async Task<IActionResult> Completed()
+        public async Task<IActionResult> Completed(DateTime date)
         {
-            DateTime defaultDate = default(DateTime);
-            var date = defaultDate.ToString().Replace("12:00:00 AM", "");
-            //return View(date);
             return View();
         }
 

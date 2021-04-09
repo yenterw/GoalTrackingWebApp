@@ -13,7 +13,7 @@ namespace GoalTrackingWebApp.Models
         [Required]
         public string GoalTitle { get; set; }
         public string GoalText { get; set; }
-        public DateTime GoalDate { get; set; } 
+        public DateTime GoalDate { get; set; } //DateTime defaultDate = default(DateTime); var date = defaultDate.ToString().Replace("12:00:00 AM", "");
         public CompletedGoal()
         {
 
