@@ -72,7 +72,7 @@ namespace GoalTrackingWebApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,GoalTitle,GoalText")] Goal goal)
+        public async Task<IActionResult> Create([Bind("Id,GoalTitle,GoalText,GoalDate")] Goal goal)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +104,7 @@ namespace GoalTrackingWebApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,GoalTitle,GoalText")] Goal goal)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,GoalTitle,GoalText,GoalDate")] Goal goal)
         {
             if (id != goal.Id)
             {
