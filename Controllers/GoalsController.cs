@@ -28,7 +28,7 @@ namespace GoalTrackingWebApp.Controllers
         // GET: Goals/ShowSearchForm
         public async Task<IActionResult> ShowSearchForm()
         {
-            return View();
+            return View(await _context.Goal.ToListAsync());
         }
 
         // POST: Goals/ShowSearchResults
