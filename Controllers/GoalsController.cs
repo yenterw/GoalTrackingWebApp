@@ -56,9 +56,9 @@ namespace GoalTrackingWebApp.Controllers
         }
 
         // GET: Goals/Completed/5
-        public async Task<IActionResult> Completed(DateTime date)
+        public async Task<IActionResult> Completed()
         {
-            return View("Completed", await _context.Goal.Where(j => j.GoalDate.Equals(date)).ToListAsync());
+            return View("Completed", await _context.CompletedGoal.ToListAsync());
         }
 
         // GET: Goals/Create
