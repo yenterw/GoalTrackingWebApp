@@ -58,7 +58,7 @@ namespace GoalTrackingWebApp.Controllers
         // GET: Goals/Completed/5
         public async Task<IActionResult> Completed()
         {
-            return View("Completed", await _context.CompletedGoal.ToListAsync());
+            return View("Index", await _context.Goal.ToListAsync());
         }
 
         // GET: Goals/Create
