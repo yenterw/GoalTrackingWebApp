@@ -39,6 +39,7 @@ namespace GoalTrackingWebApp.Controllers
         }
 
         // GET: Goals/Details/5
+        [Authorize]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -57,6 +58,7 @@ namespace GoalTrackingWebApp.Controllers
         }
 
         // GET: Goals/Completed/5
+        [Authorize]
         public async Task<IActionResult> Completed()
         {
             return View("Index", await _context.Goal.ToListAsync()); //DateTime defaultDate = default(DateTime); var date = defaultDate.ToString().Replace("12:00:00 AM", "");
